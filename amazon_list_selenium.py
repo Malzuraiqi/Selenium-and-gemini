@@ -31,7 +31,7 @@ def main():
     # Use gemini to filter out the self-help books from the list
     contents = f'''
         From the following list of books {full_books_list}, 
-        return only the self-help books as a valid Python list of tuples in the format [(title, author), ...]. 
+        return only the self-help books as a valid Python list of tuples in the format [(title, author), ...] 
         Do not include any explanation or extra text, only the list.
     '''
     response = model.generate_content(contents=contents)
